@@ -1,7 +1,14 @@
 use std::os::unix::fs::chown;
 use crate::chapter9::structh_with_field::{new_map, GrayscaleMap, broom_test};
 
+use crate::chapter11::trait_object_basic::hello;
+use crate::chapter11::generic_and_type_paramter::top_ten;
+use crate::chapter11::trait_and_self::{do_it};
+use crate::chapter11::trait_default_method::default_call;
+
+
 mod chapter9;
+mod chapter11;
 
 
 // 필드가 모두 public인 경우에는 아래와 같이 assert_eq!()에서 필드로 직접 접근하고 생성할 수 있다.
@@ -34,5 +41,10 @@ fn t1_1() {
 fn main() {
     // t1_1();
     // t1_2();
-    broom_test();
+    // broom_test();
+    // hello()
+    default_call();
+    do_it()
+
+
 }
