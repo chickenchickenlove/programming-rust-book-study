@@ -7,3 +7,7 @@ pub mod trait_and_self;
 mod determine_trait_object;
 mod sub_trait;
 mod type_refered_function;
+pub mod impl_trait;
+pub mod my_iterator;
+mod type_constant;
+mod bound_reverse;
